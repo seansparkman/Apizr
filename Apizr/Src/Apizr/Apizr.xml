@@ -6319,5 +6319,77 @@
         <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.SafeDelete(`1,Apizr.Configuring.Request.IApizrRequestOptions)">
             <inheritdoc />
         </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#Create(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeCreate(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#Create(`0,Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeCreate(`0,Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#ReadAll">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeReadAll">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#ReadAll(Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeReadAll(Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#ReadAll(`3)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeReadAll(`3)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#ReadAll(`3,Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeReadAll(`3,Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#Read(`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeRead(`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#Read(`1,Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeRead(`1,Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#Update(`1,`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeUpdate(`1,`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#Update(`1,`0,Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeUpdate(`1,`0,Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#Delete(`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeDelete(`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#Delete(`1,Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ApizrRequestingICrudApi`4.Apizr#Requesting#ICrudApi{T,TKey,TReadAllResult,TReadAllParams}#SafeDelete(`1,Apizr.Configuring.Request.IApizrRequestOptions)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>
