@@ -9,10 +9,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.githubusercontent.com/Respawnsive/Apizr/master/LICENSE</licenseUrl>
     <readme>README.md</readme>
-    <projectUrl>https://github.com/PixelSpark/Apizr</projectUrl>
+    <projectUrl>https://github.com/seansparkman/Apizr</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/Respawnsive/Apizr/master/logo.png</iconUrl>
     <description>Fork of Apizr (https://github.com/Respawnsive/Apizr) retargeted to Refit 10.x and net10.0. Refit based web api client management, but resilient (retry, connectivity, cache, auth, log, priority...)</description>
-    <releaseNotes>https://github.com/PixelSpark/Apizr</releaseNotes>
+    <releaseNotes>https://github.com/seansparkman/Apizr</releaseNotes>
     <tags>Refit Cache Web Api Extensions</tags>
     <dependencies>
       <dependency id="Microsoft.Extensions.Caching.Abstractions" version="9.0.3" />
