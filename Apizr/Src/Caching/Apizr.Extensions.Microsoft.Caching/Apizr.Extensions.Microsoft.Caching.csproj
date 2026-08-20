@@ -1,8 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;netstandard2.0;net6.0;net8.0</TargetFrameworks>
+    <TargetFramework>net10.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
     <RootNamespace>Apizr</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>PixelSpark.Apizr.Extensions.Microsoft.Caching</PackageId>
+    <Version>6.5.0</Version>
+    <Authors>Respawnsive, PixelSpark</Authors>
+    <Description>Fork of Apizr (https://github.com/Respawnsive/Apizr) retargeted to Refit 10.x and net10.0. Refit based web api client management, but resilient (retry, connectivity, cache, auth, log, priority...)</Description>
+    <PackageProjectUrl>https://github.com/PixelSpark/Apizr</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PixelSpark/Apizr</RepositoryUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageTags>Refit Cache Web Api Extensions</PackageTags>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>Apizr.Extensions.Microsoft.Caching.xml</DocumentationFile>
