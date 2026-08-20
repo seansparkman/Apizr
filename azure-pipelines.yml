@@ -1,0 +1,62 @@
+# Builds and publishes the PixelSpark.Apizr.* packages (a fork of
+# https://github.com/Respawnsive/Apizr retargeted to Refit 10.x / net10.0) to nuget.org.
+#
+# Requires a pipeline variable `NuGetApiKey`, marked secret, holding a nuget.org API key
+# scoped to push new versions of PixelSpark.Apizr / PixelSpark.Apizr.Extensions.Microsoft.*.
+# Set it in the pipeline's Variables UI - do not add it to this file.
+#
+# Only runs on version tags (v*), so pushing to main/dev doesn't auto-publish. To release,
+# tag the commit (e.g. `git tag v6.5.0 && git push origin v6.5.0`).
+
+trigger:
+  branches:
+    exclude:
+      - '*'
+  tags:
+    include:
+      - v*
+
+pr: none
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfiguration: Release
+  packOutputDir: $(Build.ArtifactStagingDirectory)/nupkgs
+
+steps:
+  - task: UseDotNet@2
+    displayName: 'Install .NET 10 SDK'
+    inputs:
+      packageType: sdk
+      version: '10.0.x'
+
+  - script: |
+      dotnet restore Apizr/Src/Apizr/Apizr.csproj
+      dotnet restore Apizr/Src/Apizr.Extensions.Microsoft.DependencyInjection/Apizr.Extensions.Microsoft.DependencyInjection.csproj
+      dotnet restore Apizr/Src/Caching/Apizr.Extensions.Microsoft.Caching/Apizr.Extensions.Microsoft.Caching.csproj
+    displayName: 'Restore'
+
+  - script: |
+      dotnet build Apizr/Src/Apizr/Apizr.csproj -c $(buildConfiguration) --no-restore
+      dotnet build Apizr/Src/Apizr.Extensions.Microsoft.DependencyInjection/Apizr.Extensions.Microsoft.DependencyInjection.csproj -c $(buildConfiguration) --no-restore
+      dotnet build Apizr/Src/Caching/Apizr.Extensions.Microsoft.Caching/Apizr.Extensions.Microsoft.Caching.csproj -c $(buildConfiguration) --no-restore
+    displayName: 'Build'
+
+  - script: |
+      dotnet pack Apizr/Src/Apizr/Apizr.csproj -c $(buildConfiguration) --no-build -o $(packOutputDir)
+      dotnet pack Apizr/Src/Apizr.Extensions.Microsoft.DependencyInjection/Apizr.Extensions.Microsoft.DependencyInjection.csproj -c $(buildConfiguration) --no-build -o $(packOutputDir)
+      dotnet pack Apizr/Src/Caching/Apizr.Extensions.Microsoft.Caching/Apizr.Extensions.Microsoft.Caching.csproj -c $(buildConfiguration) --no-build -o $(packOutputDir)
+    displayName: 'Pack'
+
+  - publish: $(packOutputDir)
+    artifact: nupkgs
+    displayName: 'Publish pipeline artifact'
+
+  - script: |
+      dotnet nuget push "$(packOutputDir)/*.nupkg" \
+        --api-key $(NuGetApiKey) \
+        --source https://api.nuget.org/v3/index.json \
+        --skip-duplicate
+    displayName: 'Push to nuget.org'
